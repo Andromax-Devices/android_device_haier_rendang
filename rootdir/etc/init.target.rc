@@ -45,11 +45,14 @@ on boot
     write /sys/block/mmcblk0/bdi/read_ahead_kb 128
 
     setprop ro.boot.btmacaddr "00:00:00:00:00:00"
+<<<<<<< HEAD
 
 on fs
     # GnssConfiguration doesn't actually look at gps.conf, just the debug file
     mount none /system/etc/gps.conf /system/etc/gps_debug.conf bind
 
+=======
+>>>>>>> e48a9ad... msm8916-common: Use CarrierConfig for gnss configs
 service imsqmidaemon /system/vendor/bin/imsqmidaemon
     class main
     user radio
